@@ -21,22 +21,26 @@ void loop() {
       Serial.println(data);
       if(data=='w')
       {
-        adelante();
         parar();
+        adelante();
       }
       else if(data=='a')
       {
-        izquierda();
         parar();
+        izquierda();
       } 
       else if(data=='s')
       {
-         reversa();
          parar();
+         reversa();
       } 
       else if(data=='d')
       {
+        parar();
         derecha();
+      } 
+       else if(data=='p')
+      {
         parar();
       } 
       else
